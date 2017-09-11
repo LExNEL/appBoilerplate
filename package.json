@@ -13,9 +13,9 @@
   "author": "LEx Klimin",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot",
-    "build": "NODE_ENV=production webpack"
+    "dev": "webpack-dev-server --env.development",
+    "hot": "webpack-dev-server --env.development --inline --hot",
+    "build": "webpack --env.production"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
